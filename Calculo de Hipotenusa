@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package spp.jposadasa.a03.p2;
+import java.util.Scanner;
+/**
+ *
+ * @author Jaime Jr
+ */
+public class SPPJPosadasAA03P2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner kb = new Scanner (System.in);
+        double ca, co, h;
+        
+        System.out.println("Bienvenido a la calduladora de la hipotenusa");
+        System.out.println("Porfavor introduzca los datos necesarios");
+        System.out.println("Cateto adyacente");
+        ca=kb.nextDouble();
+        System.out.println("Cateto opuesto");
+        co=kb.nextDouble();
+        h=Math.sqrt(Math.pow(co,2)+Math.pow(ca,2));
+        System.out.println("H = sqrt(("+co+"^2)+("+ca+"^2))");
+        System.out.println("Hipotenusa: " + h);
+        
+    }
+    
+}
